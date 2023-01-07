@@ -1,13 +1,8 @@
 import React, {useState, useEffect} from 'react';
 
 function CursosFn() {
- /*   
-    return (
-        <div>
-        <h1>HOLA, SOY EL COMPONENTE SALUDO</h1>
-        </div>
-    )*/
-   
+ 
+
     const [cursos, setCursos] = useState([]);
 
     useEffect(() => {
