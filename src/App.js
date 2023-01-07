@@ -1,15 +1,21 @@
 import './App.css';
-import CursosFn from './components/cursosFn';
-import UsuariosFn from './components/usuariosFn';
+import TotalCursos from './components/TotalCursos';
+import TotalUsuarios from './components/TotalUsuarios';
+import TotalCategorias from './components/TotalCategorias';
+import UltimoUsuarioCreado from './components/UltimoUsuarioCreado';
 import { BrowserRouter, Route, Link, Routes as Switch } from 'react-router-dom';
 
 function App() {
 
   return (
-    <div>
-      <CursosFn />
-      <UsuariosFn />
-    </div>
+    <BrowserRouter>
+
+      <TotalUsuarios />
+      <TotalCursos />
+      <TotalCategorias />
+      <UltimoUsuarioCreado />
+
+    </BrowserRouter>
 );
 
 }
