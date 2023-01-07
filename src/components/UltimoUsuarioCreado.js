@@ -5,14 +5,14 @@ function UltimoUsuarioCreado () {
     const [usuarios, setUsuarios] = useState([]);
 
     const usuariosAPI = async () => {
-        const datain = await  fetch('https://grupo12.onrender.com/usuario/usuariosAPI')
-        const data = await datain.json()
+        const dataIn = await  fetch('https://grupo12.onrender.com/usuario/usuariosAPI')
+        const data = await dataIn.json()
         console.log(data)
         setUsuarios(data)
     }
 
     useEffect(() => {
-        console.log('%c se monto el componente', 'color:green')
+        console.log('%c Se montó el componente', 'color:green')
         usuariosAPI()
     }, [])
 
