@@ -4,7 +4,7 @@ import TotalUsuarios from './components/TotalUsuarios';
 import TotalCategorias from './components/TotalCategorias';
 import UltimoUsuarioCreado from './components/UltimoUsuarioCreado';
 import UltimoCursoCreado from './components/UltimoCursoCreado';
-import CursosPorCategoria from './components/CursosPorCategoria';
+import CursosYCategorias from './components/CursosYCategorias';
 import DetalleCursos from './components/DetalleCursos';
 import { BrowserRouter, Route, Link, Routes as Switch } from 'react-router-dom';
 
@@ -18,8 +18,8 @@ function App() {
       <TotalCategorias />
       <UltimoCursoCreado />
       <UltimoUsuarioCreado />
-      <CursosPorCategoria />
       <DetalleCursos />
+      <CursosYCategorias />
 
     </BrowserRouter>
 );

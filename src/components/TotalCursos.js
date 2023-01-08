@@ -8,7 +8,6 @@ function TotalCursos() {
     const cursosAPI = async () => {
         const dataIn = await  fetch('https://grupo12.onrender.com/cursosAPI')
         const data = await dataIn.json()
-        console.log(data)
         setCursos(data)
         
     }

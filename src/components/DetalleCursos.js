@@ -7,9 +7,8 @@ function DetalleCursos () {
     const cursosAPI = async () => {
         const dataIn = await  fetch('https://grupo12.onrender.com/cursosAPI')
         const data = await dataIn.json()
-        console.log(data)
-        setdetalleCursos(data)
-        
+        let totalCursos = data.cursos
+        setdetalleCursos(totalCursos)        
     }
 
     useEffect(() => {
@@ -17,15 +16,23 @@ function DetalleCursos () {
         cursosAPI()
     }, [])
 
-    
+
 
     return (
         <div >
              <h1> Detalle Cursos </h1>
-            <h2> Nombre: {detalleCursos.nombre} </h2>
-            <h2>  Fecha de inicio: {detalleCursos.fechaInicioCurso} </h2>
-            <h2> Precio: {detalleCursos.precio} </h2>
+             <ul>
 
+             {
+                detalleCursos.map( e => (
+                    <li key={e.idCurso}> <h2> {e.nombre}</h2>
+                    <p> Descripción: {e.descripcion}</p>
+                    <p> Precio: ${e.precio}</p>
+                    
+                    </li>
+                ))
+             }
+             </ul>
         </div>
     );
 

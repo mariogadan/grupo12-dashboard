@@ -7,7 +7,6 @@ function TotalCategorias () {
     const categoriasAPI = async () => {
         const dataIn = await  fetch('https://grupo12.onrender.com/categoriasAPI')
         const data = await dataIn.json()
-        console.log(data)
         setCategorias(data)
         
     }

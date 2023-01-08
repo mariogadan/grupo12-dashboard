@@ -19,9 +19,9 @@ function UltimoCursoCreado () {
     return (
         <div>
             <h1> Último curso creado </h1>
-            <h2> Nombre: {ultimoCurso.nombre} </h2>
-            <h2> Precio: {ultimoCurso.precio} </h2>
-            <h2> Fecha de inicio: {ultimoCurso.fechaInicioCurso} </h2>
+            <h2> {ultimoCurso.nombre} </h2>
+            <p> Precio: $ {ultimoCurso.precio} </p>
+            <p> Fecha de inicio: {ultimoCurso.fechaInicioCurso} </p>
         </div>
     );
 
