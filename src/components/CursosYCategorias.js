@@ -23,12 +23,16 @@ function CursosYCategorias () {
 
 
     return (
-        <div>
-            <h1> Cursos según categoría </h1>
+        <div className="margin">
+
+              <div className="div-title">
+              <ion-icon name="rocket-outline"></ion-icon>
+             <div className="div-title2"> DETALLE DE LAS CATEGORIAS </div>
+        </div>
             <ul>
             {
                 cursosYCategorias.map(e => (
-                    <li key={e.idTipoCurso}> <h2> {e.nombre}: {e.count} </h2> </li>
+                    <li key={e.idTipoCurso}> <div className="categorias">{e.nombre}: {e.count} </div> </li>
                     
                 ))
             }       

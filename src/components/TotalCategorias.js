@@ -16,11 +16,21 @@ function TotalCategorias () {
     }, [])
 
     return (
-        <div >
-            <h1>Total de categorías</h1>
-            <h2>{categorias.length}</h2>
+        <div className="kpi">
+        <div className="kpi-title"> CATEGORÍAS</div>
+        <div className= "kpi-background"> 
+                <div className="kpi-icon"> 
+                <ion-icon name="rocket-outline"></ion-icon>
+                     </div>
+                <div className="kpi-text">
+        <h2>{categorias.length}</h2>
         </div>
-    );
+        </div>
+        </div>
+        );
+   
+
+
 
 }
 

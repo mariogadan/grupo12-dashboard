@@ -18,10 +18,19 @@ function UltimoUsuarioCreado () {
 
     return (
         <div>
-            <h1> Último usuario creado </h1>
-            <h2> Nombre: {ultimoUsuario.nombre} </h2>
-            <h2> Apellido: {ultimoUsuario.apellido} </h2>
-            <h2> E-mail: {ultimoUsuario.email} </h2>
+            <div className='latest-background'> 
+            <div className='latest-icon'> 
+            <ion-icon name="happy-outline"></ion-icon>
+            </div>
+            <div className='latest-text'> 
+            <div className='latest-div-title'> ÚLTIMO USUARIO CREADO </div>
+            <div className='latest-div-text'>
+            <p> Nombre: {ultimoUsuario.nombre} </p>
+            <p> Apellido: {ultimoUsuario.apellido} </p>
+            <p> E-mail: {ultimoUsuario.email} </p>
+            </div>
+        </div>
+        </div>
         </div>
     );
 

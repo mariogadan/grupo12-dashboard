@@ -6,18 +6,30 @@ import UltimoUsuarioCreado from './components/UltimoUsuarioCreado';
 import UltimoCursoCreado from './components/UltimoCursoCreado';
 import CursosYCategorias from './components/CursosYCategorias';
 import DetalleCursos from './components/DetalleCursos';
+import Navbar from './components/Navbar';
 import { BrowserRouter, Route, Link, Routes as Switch } from 'react-router-dom';
 
 function App() {
 
   return (
+    
     <BrowserRouter>
-
-      <TotalUsuarios />
-      <TotalCursos />
-      <TotalCategorias />
-      <UltimoCursoCreado />
-      <UltimoUsuarioCreado />
+      <div>
+        <Navbar/>
+       </div>
+       <div className="flex"> 
+          <TotalUsuarios />
+          <TotalCursos />
+          <TotalCategorias />
+        </div>
+        <div className="div-title">
+             <ion-icon name="timer-outline"></ion-icon>
+             <div className="div-title2"> LATEST METRICS </div>
+        </div>
+        <div className="flex">  
+          <UltimoCursoCreado />
+          <UltimoUsuarioCreado />
+       </div>
       <DetalleCursos />
       <CursosYCategorias />
 

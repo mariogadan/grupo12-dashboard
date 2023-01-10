@@ -27,10 +27,16 @@ function TotalUsuarios() {
     }, [])
 
     return (
-        <div>
-            <h1>Total usuarios</h1>
+        <div className="kpi">
+            <div className="kpi-title"> USUARIOS</div>
+            <div className= "kpi-background"> 
+                    <div className="kpi-icon"> 
+                        <ion-icon name="people-outline"></ion-icon>
+                    </div>
+                    <div className="kpi-text">
             <h2>{usuarios.total}</h2>
-
+            </div>
+        </div>
         </div>
     );
 

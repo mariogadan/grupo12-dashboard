@@ -17,12 +17,19 @@ function UltimoCursoCreado () {
     }, [])
 
     return (
-        <div>
-            <h1> Último curso creado </h1>
-            <h2> {ultimoCurso.nombre} </h2>
+        <div className='latest-background'>
+            <div className='latest-icon'> 
+            <ion-icon name="ribbon-outline"></ion-icon>
+            </div>
+            <div className='latest-text'> 
+            <div className='latest-div-title'> ÚLTIMO CURSO CREADO </div>
+           
+            <h3> {ultimoCurso.nombre} </h3>
             <p> Precio: $ {ultimoCurso.precio} </p>
             <p> Fecha de inicio: {ultimoCurso.fechaInicioCurso} </p>
         </div>
+        </div>
+       
     );
 
 }

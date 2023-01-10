@@ -1,13 +1,182 @@
-body {
+
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding:0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  font-family: 'Rubik', sans-serif;
+}
+.navbar {
+  background-color: #6F50F8;
+  padding: 1rem 2 rem;
+  border-bottom: 1px solid gray;
+  height: 3rem;
+  display: felx;
+
+
+}
+
+.navbar-icon{
+color: white;
+margin-left: 20px;
+padding: 14px 0;
+font-size: 25px;
+}
+
+.navbar-text {
+  color: white;
+  margin-left: 55px;
+  margin-top: -40px;
+
+}
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* KPIS */
+
+.kpi{
+  margin: 100px;
+  margin-top:50px;
+}
+.kpi-background{
+  background-color: #f2f2f2;
+  width: 140%;
+  height: 150px;
+  border-radius: 3px;
+  display: flex;
+}
+
+.kpi-title{
+  font-size: 12px;
+  font-weight: bold;
+  color: #6F50F8;
+  margin-bottom: 10px;
+}
+
+.kpi-icon{
+  color: #6F50F8;
+  font-size: 60px;
+  padding:40px 0;
+  margin-left:50px;
+}
+
+.kpi-text{
+  color: #6F50F8;
+  font-size: 35px;
+  padding:42px 0;
+  margin-left:2rem;
+}
+
+/* LATEST METRICS */
+.div-title{
+  display:flex;
+  color:#6F50F8;
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 11.5%;
+  
+}
+
+.div-title2{
+  margin-left: 5px;
+}
+
+.latest-background{
+  background-color: #f2f2f2;
+  width: 30rem;
+  height: 10rem;
+  border-radius: 3px;
+  display: flex;
+  margin-right: 8%;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem;
+  
+}
+
+.latest-icon{
+  color: #6F50F8;
+  font-size: 80px;
+  padding:40px 40px;
+  margin-left:-3rem;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.latest-text{
+  margin-left: 10%;
+  margin-top: 1rem;
+}
+
+.latest-div-title{
+  font-size: 12px;
+  font-weight: bold;
+  color: #6F50F8;
+  margin-bottom: 1rem;  
+}
+
+p{
+  margin-top: 5px;
+}
+
+.latest-div-text{
+  font-size: 17px;
+}
+
+/* Detalle de los cursos */
+.detalle-block{
+  margin-top: 30px;
+  margin-left: 11.5%;
+  display: flex;
+}
+
+.detalle-nombre{
+  background-color: #f2f2f2;
+  font-size: 12px;
+  width: 20%;
+  height: 8rem;
+  border-radius: 3px;
+  display: flex;
+  margin-right: 2%;
+ 
+  justify-content: left;
+  align-items: center;
+ 
+}
+h2{
+  margin-left: 20px;
+}
+
+.detalle-text{
+  justify-content: left;
+  align-items: center;
+  margin-top: 10px;
+  width: 80%;
+  
+}
+.detalle-subitutlos{
+  font-weight: bold;
+  margin-top: 10px;
+  
+}
+
+.margin{
+  margin-top: 50px;
+}
+
+/* Categorias */
+.categorias{
+  display:flex;
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 11.5%;
+  margin-top: 20px;
 }
